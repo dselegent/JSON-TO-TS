@@ -9,18 +9,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.0.1",
     "@monaco-editor/react": "^4.4.6",
-    "antd": "^5.3.2",
+    "antd": "^5.0.3",
     "json-to-ts": "^1.7.0",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@iconify-json/ant-design": "^1.1.5",
+    "@iconify-json/logos": "^1.1.23",
+    "@svgr/core": "^6.5.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "unplugin-icons": "^0.15.3",
     "vite": "^4.2.0"
   }
 }

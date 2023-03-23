@@ -3,7 +3,10 @@ import Editor from '@monaco-editor/react'
 import JsonToTS from 'json-to-ts'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { message, Button, FloatButton, Drawer, Space, Select, Typography } from 'antd'
-import { DeleteFilled, CopyFilled, SettingOutlined, GithubOutlined } from '@ant-design/icons'
+import DeleteFilled from '~icons/ant-design/delete-filled'
+import CopyFilled from '~icons/ant-design/copy-filled'
+import SettingOutlined from '~icons/ant-design/setting-outlined'
+import GithubOutlined from '~icons/ant-design/github-outlined'
 
 const { Link } = Typography
 
@@ -102,7 +105,6 @@ function App() {
           </div>
         </div>
       </main>
-
       <FloatButton icon={<SettingOutlined />} onClick={showDrawer} tooltip={<div>设置</div>} />
       <Drawer title="设置" placement="right" onClose={onClose} open={open}>
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>

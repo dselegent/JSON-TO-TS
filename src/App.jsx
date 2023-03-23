@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import Editor from '@monaco-editor/react'
 import JsonToTS from 'json-to-ts'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import { message, Button, FloatButton, Drawer, Space, Select } from 'antd'
-import { DeleteFilled, CopyFilled, SettingOutlined } from '@ant-design/icons'
+import { message, Button, FloatButton, Drawer, Space, Select, Typography } from 'antd'
+import { DeleteFilled, CopyFilled, SettingOutlined, GithubOutlined } from '@ant-design/icons'
+
+const { Link } = Typography
 
 function App() {
   const [value, setValue] = useState('')
@@ -104,6 +106,22 @@ function App() {
       <FloatButton icon={<SettingOutlined />} onClick={showDrawer} tooltip={<div>设置</div>} />
       <Drawer title="设置" placement="right" onClose={onClose} open={open}>
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Space size="large">
+            仓库地址
+            <Link
+              href="https://github.com/dselegent/JSON-TO-TS"
+              target="_blank"
+              style={{
+                color: '#000',
+              }}
+            >
+              <GithubOutlined
+                style={{
+                  fontSize: '22px',
+                }}
+              />
+            </Link>
+          </Space>
           <Space size="large">
             主题
             <Select

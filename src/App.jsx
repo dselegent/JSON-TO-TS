@@ -105,7 +105,18 @@ function App() {
           </div>
         </div>
       </main>
-      <FloatButton icon={<SettingOutlined />} onClick={showDrawer} tooltip={<div>设置</div>} />
+      <FloatButton
+        icon={
+          <SettingOutlined
+            style={{
+              width: '18px',
+              height: '18px',
+            }}
+          />
+        }
+        onClick={showDrawer}
+        tooltip={<div>设置</div>}
+      />
       <Drawer title="设置" placement="right" onClose={onClose} open={open}>
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
           <Space size="large">

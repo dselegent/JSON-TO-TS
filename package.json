@@ -18,11 +18,11 @@
   },
   "devDependencies": {
     "@iconify-json/ant-design": "^1.1.5",
-    "@iconify-json/logos": "^1.1.23",
     "@svgr/core": "^6.5.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "terser": "^5.16.8",
     "unplugin-icons": "^0.15.3",
     "vite": "^4.2.0"
   }

@@ -3,10 +3,7 @@ import Editor from '@monaco-editor/react'
 import JsonToTS from 'json-to-ts'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { message, Button, FloatButton, Drawer, Space, Select, Typography } from 'antd'
-import DeleteFilled from '~icons/ant-design/delete-filled'
-import CopyFilled from '~icons/ant-design/copy-filled'
-import SettingOutlined from '~icons/ant-design/setting-outlined'
-import GithubOutlined from '~icons/ant-design/github-outlined'
+import { DeleteFilled, CopyFilled, SettingOutlined, GithubOutlined } from './icons'
 
 const { Link } = Typography
 
